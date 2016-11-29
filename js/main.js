@@ -5,6 +5,7 @@ var parent = document.body;
 var header = document.createElement("h4");
 var wrapper = document.createElement("div");
 var questionareList = document.createElement('ol');
+var chkbtn = document.createElement('button')
 var questItem1 = document.createElement('li');
 var questItem2 = document.createElement('li');
 var questItem3 = document.createElement('li');
@@ -40,6 +41,9 @@ var checkAnswer32 = document.createElement('input');
 var checkAnswer33 = document.createElement('input');
 
 wrapper.setAttribute('class', 'col-xs-4 col-xs-offset-2');
+
+chkbtn.setAttribute('class', 'btn btn-default btn-lg  col-xs-8 col-xs-offset-6');
+chkbtn.innerHTML = 'Проверить мои результаты';
 
 header.setAttribute("class", "text-center");
 header.innerHTML = 'Тест по программированию';
@@ -137,3 +141,5 @@ questItem3.appendChild(answerList3);
 questionareList.appendChild(questItem1);
 questionareList.appendChild(questItem2);
 questionareList.appendChild(questItem3);
+
+wrapper.appendChild(chkbtn);
